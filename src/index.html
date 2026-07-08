@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" />
     <title>To Do List</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <script src="script.js"></script>
   </head>
   <body>
@@ -51,20 +51,20 @@
       <ul class="todo__list" data-js-todo-list>
         <li class="todo__item todo-item" data-js-todo-item>
           <input
-            class="todo__item-input"
+            class="todo-item__checkbox"
             id="todo-1"
             type="checkbox"
             data-js-todo-item-checkbox
           />
           <label
-            class="todo__item-checkbox"
+            class="todo-item__label"
             for="todo-1"
             data-js-todo-item-label
           >
             todo-1
           </label>
           <button
-            class="todo__item-delete-button"
+            class="todo-item__delete-button"
             type="button"
             aria-label="Delete"
             title="Delete"
