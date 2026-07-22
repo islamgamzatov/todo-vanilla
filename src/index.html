@@ -5,12 +5,11 @@
     <meta name="viewport" />
     <title>To Do List</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="todo" data-js-todo>
       <h1 class="todo__title">To Do List</h1>
-      <div class="todo__form" data-js-todo-new-task-form>
+      <form class="todo__form" data-js-todo-new-task-form>
         <div class="todo__field field">
           <label class="field__label" for="new-task">New Task Title</label>
           <input
@@ -22,8 +21,8 @@
           />
         </div>
         <button class="button" type="submit">Add</button>
-      </div>
-      <div class="todo__form" data-js-todo-search-task-form>
+      </form>
+      <form class="todo__form" data-js-todo-search-task-form>
         <div class="todo__field field">
           <label class="field__label" for="search-task">Search Task</label>
           <input
@@ -35,7 +34,7 @@
             data-js-todo-search-task-input
           />
         </div>
-      </div>
+      </form>
       <div class="todo__info">
         <div class="todo__total-tasks">
           Total Tasks: <span data-js-todo-total-tasks>0</span>
@@ -52,6 +51,7 @@
       </ul>
       <div class="todo__empty-message" data-js-todo-empty-message></div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
 
